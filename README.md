@@ -87,7 +87,7 @@ blog_series.md    三篇选题与每篇要用的真实数字
 | `AGENT_MODEL` | `opencode-go/deepseek-v4.1-flash` | 模型名 |
 | `AGENT_PROVIDER` | `openai` | `openai` / `ollama` |
 
-无可用端点时会报 `llm_error` 并中止该臂；报告里会标注"未验证"，不会把模拟数字混进结果。
+无可用端点时会报 `llm_error`；连续 3 次故障即中止该臂，失败行连同 `error` 字段写入 CSV。报告只按 CSV 现有行计算（不补造数据），中止臂的 n 会小于 360，引用前先核行数。
 依赖只有 `pytest`（判定用），其余为 Python 3.10+ 标准库。
 
 ## 当前状态
