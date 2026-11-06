@@ -1,0 +1,8 @@
+{
+  "bug_category": "cache_state",
+  "symptom": "隐藏测试失败（2 failed,6 passed），同类型不同值命中错误缓存；src/state.py 的修复因工具参数解析失败未落地。",
+  "root_cause": "SquareCache 以类型名作缓存键，Square(1) 与 Square(2) 共用条目，返回污染值。",
+  "fix_pattern": "缓存键改为含实例值/参数；验证 SquareCache.get(Square(1)) 与 SquareCache.get(Square(2)) 结果各自正确。",
+  "language_constraints": "Python3 纯标准库；tests/ 只读，仅改 src/。",
+  "rule": "遇到缓存按类型名做键就改为按完整值/参数做键，并加同类型不同值断言验证。"
+}

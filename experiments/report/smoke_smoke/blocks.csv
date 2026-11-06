@@ -1,0 +1,3 @@
+arm,index,n,k,rate,lo,hi,tokens,reflect,memory,falsified
+no_memory,0,2,2,1.0,0.34237195288961925,1.0,16221.5,0.0,0,0
+write_verified,0,2,2,1.0,0.34237195288961925,1.0,15879.5,0.0,0,0

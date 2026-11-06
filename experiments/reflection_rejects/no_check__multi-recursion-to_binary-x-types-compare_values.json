@@ -1,0 +1,8 @@
+{
+  "bug_category": "type_conversion",
+  "symptom": "compare_values(1,'1') 抛 TypeError，隐藏测试失败",
+  "root_cause": "normalize.py 的 compare_values 直接执行 a>b 和 a<b，未处理混合类型",
+  "fix_pattern": "类型不同时按类型名与 repr 回退排序；验证 compare_values(1,'1') 不抛错且返回 int",
+  "language_constraints": "Python3 纯标准库，tests/ 只读不可改",
+  "rule": "遇 compare_values 跨类型入参先做类型回退，并用混合类型用例验证"
+}

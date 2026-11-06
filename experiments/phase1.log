@@ -1,0 +1,43 @@
+模型=openai:opencode-go/deepseek-v4.1-flash 任务=20 臂=['no_memory', 'write_verified'] 检索=category
+[no_memory] 1/20 #0 multi-boundary-last_le-x-cache_state-square_cache_key PASS inj=0 mem=0 tok=17346 36.0s
+[write_verified] 1/20 #0 multi-boundary-last_le-x-cache_state-square_cache_key PASS inj=0 mem=0 tok=18254 41.4s
+[no_memory] 2/20 #1 multi-paging-drop_head-x-types-count_nonnull PASS inj=0 mem=0 tok=22061 66.4s
+[write_verified] 2/20 #1 multi-paging-drop_head-x-types-count_nonnull PASS inj=0 mem=0 tok=16892 112.2s
+[no_memory] 3/20 #2 multi-reduce_init-max_or_none-x-cache_state-config_cache PASS inj=0 mem=0 tok=18732 118.5s
+[write_verified] 3/20 #2 multi-reduce_init-max_or_none-x-cache_state-config_cache PASS inj=0 mem=0 tok=11806 76.2s
+[no_memory] 4/20 #3 multi-mutable_default-append_tag-x-recursion-depth PASS inj=0 mem=0 tok=11055 28.2s
+[no_memory] 5/20 #4 cache_state-counter_reset PASS inj=0 mem=0 tok=7659 35.2s
+[no_memory] 6/20 #5 multi-parsing-parse_kv-x-reduce_init-second_largest PASS inj=0 mem=0 tok=16306 67.2s
+[write_verified] 4/20 #3 multi-mutable_default-append_tag-x-recursion-depth PASS inj=0 mem=0 tok=22399 135.6s
+[write_verified] 5/20 #4 cache_state-counter_reset PASS inj=0 mem=0 tok=8989 29.0s
+[no_memory] 7/20 #6 recursion-to_binary PASS inj=0 mem=0 tok=16956 111.8s
+[write_verified] 6/20 #5 multi-parsing-parse_kv-x-reduce_init-second_largest PASS inj=0 mem=0 tok=17089 102.1s
+[write_verified] 7/20 #6 recursion-to_binary PASS inj=0 mem=0 tok=16122 51.6s
+[no_memory] 8/20 #7 multi-types-safe_int-x-mutable_default-collect_pairs PASS inj=0 mem=0 tok=19874 122.3s
+[write_verified] 8/20 #7 multi-types-safe_int-x-mutable_default-collect_pairs PASS inj=0 mem=0 tok=17044 53.6s
+[no_memory] 9/20 #8 multi-boundary-count_occurrences-x-mutable_default-make_counter FAIL(wrong_fix) inj=0 mem=0 tok=21421 115.8s
+[no_memory] 10/20 #9 paging-paginate_pairs PASS inj=0 mem=0 tok=9371 68.4s
+[write_verified] 9/20 #8 multi-boundary-count_occurrences-x-mutable_default-make_counter PASS inj=1 mem=1 tok=19409 230.7s
+[no_memory] 11/20 #10 reduce_init-sum_positives PASS inj=0 mem=0 tok=9998 65.0s
+[write_verified] 10/20 #9 paging-paginate_pairs PASS inj=1 mem=1 tok=14244 29.0s
+[no_memory] 12/20 #11 multi-mutable_default-merge_defaults-x-parsing-split_path FAIL(wrong_fix) inj=0 mem=0 tok=16882 48.7s
+[write_verified] 11/20 #10 reduce_init-sum_positives PASS inj=1 mem=1 tok=13497 32.3s
+[no_memory] 13/20 #12 multi-cache_state-square_cache_key-x-paging-last_page PASS inj=0 mem=0 tok=13671 50.1s
+[no_memory] 14/20 #13 multi-parsing-parse_flags-x-reduce_init-mean_nonempty PASS inj=0 mem=0 tok=17141 54.0s
+[no_memory] 15/20 #14 recursion-reverse_rec PASS inj=0 mem=0 tok=9877 43.1s
+[no_memory] 16/20 #15 multi-types-compare_values-x-cache_state-counter_reset PASS inj=0 mem=0 tok=17804 105.8s
+[write_verified] 12/20 #11 multi-mutable_default-merge_defaults-x-parsing-split_path FAIL(wrong_fix) inj=1 mem=2 tok=24995 270.3s
+[no_memory] 17/20 #16 multi-boundary-first_nonnegative-x-mutable_default-Stack FAIL(wrong_fix) inj=0 mem=0 tok=12762 26.4s
+[write_verified] 13/20 #12 multi-cache_state-square_cache_key-x-paging-last_page PASS inj=2 mem=2 tok=17955 50.7s
+[write_verified] 14/20 #13 multi-parsing-parse_flags-x-reduce_init-mean_nonempty PASS inj=2 mem=2 tok=20567 44.8s
+[no_memory] 18/20 #17 multi-paging-between_inclusive-x-recursion-to_binary PASS inj=0 mem=0 tok=16221 97.8s
+[no_memory] 19/20 #18 multi-reduce_init-clamp-x-cache_state-config_cache PASS inj=0 mem=0 tok=16361 43.4s
+[write_verified] 15/20 #14 recursion-reverse_rec PASS inj=2 mem=2 tok=10869 48.4s
+[no_memory] 20/20 #19 multi-mutable_default-make_counter-x-parsing-parse_bool PASS inj=0 mem=0 tok=17324 48.1s
+[write_verified] 16/20 #15 multi-types-compare_values-x-cache_state-counter_reset FAIL(budget_time) inj=2 mem=3 tok=24037 283.5s
+[write_verified] 17/20 #16 multi-boundary-first_nonnegative-x-mutable_default-Stack FAIL(wrong_fix) inj=3 mem=4 tok=22634 123.7s
+[write_verified] 18/20 #17 multi-paging-between_inclusive-x-recursion-to_binary PASS inj=3 mem=4 tok=25402 155.1s
+[write_verified] 19/20 #18 multi-reduce_init-clamp-x-cache_state-config_cache PASS inj=3 mem=4 tok=20450 47.3s
+[write_verified] 20/20 #19 multi-mutable_default-make_counter-x-parsing-parse_bool PASS inj=3 mem=4 tok=22469 115.7s
+[write_verified] 结束: {'n_total': 4, 'n_active': 4, 'n_falsified': 0, 'n_quarantined': 0, 'n_expired': 0, 'n_provisional': 0, 'n_success': 4, 'n_injected_ever': 4, 'bytes': 5243, 'events': 32, 'rejects': {}, 'statuses': {'active': 4}, 'policy': 'write_verified', 'retrieval': 'category'}
+完成 -> ./experiments/runs/phase1

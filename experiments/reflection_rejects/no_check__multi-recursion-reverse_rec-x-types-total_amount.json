@@ -1,0 +1,8 @@
+{
+  "bug_category": "parsing_robustness",
+  "symptom": "隐藏测试中 total_amount 遇 None/数字字符串/嵌套列表报错或漏加，导致 2 failed。",
+  "root_cause": "normalize.total_amount 直接累加元素，未跳过 None、未转数字字符串、未递归嵌套。",
+  "fix_pattern": "total_amount([]) 返回 0；total_amount([None,\"2\",[3]]) 返回 5；按规格处理 bool。",
+  "language_constraints": "Python3 纯标准库；tests/ 只读；需修复 src/ 全部模块。",
+  "rule": "遇到 total_amount 聚合先测 []、None、\"2\"、嵌套、bool 并逐项验证。"
+}

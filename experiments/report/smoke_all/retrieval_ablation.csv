@@ -1,0 +1,4 @@
+stream_index,strategy,bank,n_queries,coarse_recall,fine_recall,ms
+2,category,2,5,0.0,0.0,0.2709834021516144
+2,symptom,2,5,0.0,0.0,0.06984100036788732
+2,embedding,2,5,0.0,0.0,0.5871812027180567

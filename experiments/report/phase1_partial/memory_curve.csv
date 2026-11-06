@@ -1,0 +1,15 @@
+arm,stream_index,memory_after,memory_bytes,memory_falsified,injected
+no_memory,0,0,0,0,0
+no_memory,1,0,0,0,0
+no_memory,2,0,0,0,0
+no_memory,3,0,0,0,0
+write_all,0,0,0,0,0
+write_all,1,0,0,0,0
+write_all,2,1,961,0,0
+write_all,3,2,1926,0,0
+write_fail,0,0,0,0,0
+write_fail,1,0,0,0,0
+write_fail,2,1,1007,0,0
+write_verified,0,0,0,0,0
+write_verified,1,0,0,0,0
+write_verified,2,0,0,0,0

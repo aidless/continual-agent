@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="900" height="420" fill="#fff"/>
+<text x="60" y="30" font-size="18" font-family="sans-serif">记忆库规模</text>
+<text x="18" y="210.0" font-size="12" font-family="sans-serif" transform="rotate(-90 18 210.0)">条目数</text>
+<line x1="60" y1="360" x2="840" y2="360" stroke="#888"/>
+<line x1="60" y1="60" x2="60" y2="360" stroke="#888"/>
+<polyline points="60.0,360.0 320.0,360.0 580.0,229.6 840.0,99.1" fill="none" stroke="#2563eb" stroke-width="2"/>
+<circle cx="60.0" cy="360.0" r="3" fill="#2563eb"/>
+<circle cx="320.0" cy="360.0" r="3" fill="#2563eb"/>
+<circle cx="580.0" cy="229.6" r="3" fill="#2563eb"/>
+<circle cx="840.0" cy="99.1" r="3" fill="#2563eb"/>
+<text x="660" y="60" font-size="12" fill="#2563eb" font-family="sans-serif">write_all</text>
+<polyline points="60.0,360.0 320.0,360.0 580.0,229.6" fill="none" stroke="#dc2626" stroke-width="2"/>
+<circle cx="60.0" cy="360.0" r="3" fill="#dc2626"/>
+<circle cx="320.0" cy="360.0" r="3" fill="#dc2626"/>
+<circle cx="580.0" cy="229.6" r="3" fill="#dc2626"/>
+<text x="660" y="78" font-size="12" fill="#dc2626" font-family="sans-serif">write_fail</text>
+<polyline points="60.0,360.0 320.0,360.0 580.0,360.0" fill="none" stroke="#059669" stroke-width="2"/>
+<circle cx="60.0" cy="360.0" r="3" fill="#059669"/>
+<circle cx="320.0" cy="360.0" r="3" fill="#059669"/>
+<circle cx="580.0" cy="360.0" r="3" fill="#059669"/>
+<text x="660" y="96" font-size="12" fill="#059669" font-family="sans-serif">write_verified</text>
+</svg>

@@ -1,0 +1,4 @@
+arm,start,win,loss,p,net
+write_all,0,0,0,1.0,0.0
+write_fail,0,0,1,1.0,-0.3333333333333333
+write_verified,0,0,1,1.0,-0.3333333333333333
