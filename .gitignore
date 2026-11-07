@@ -8,3 +8,10 @@ experiments/reflection_raw/
 # 由 bench.stream --build 生成，可复现，不入库
 experiments/stream/c1/
 experiments/stream/c2/
+
+# 权重/断点/本地运行产物：单文件可能超 GitHub 100 MB 硬限，且可由脚本重建
+*.safetensors
+*.pt
+*.bin
+.local_runs/
+data/raw/
