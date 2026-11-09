@@ -1,5 +1,7 @@
 # 深井系列 · 持续学习 Agent
 
+[![CI](https://github.com/aidless/continual-agent/actions/workflows/import-smoke.yml/badge.svg)](https://github.com/aidless/continual-agent/actions/workflows/import-smoke.yml)
+
 在**连续任务流**里研究 Agent 的记忆写入、检索、污染与饱和。不是"记忆能不能提分"的又一次 A/B，
 而是回答四个工程问题：
 
